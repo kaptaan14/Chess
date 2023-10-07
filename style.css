@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+
+.chessboard {
+    display: grid;
+    background-color: #313131;
+    grid-template-columns: repeat(8, 0fr);
+    grid-template-rows: repeat(8, 0fr);
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+
+.square {
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s;
+
+}
+
+.square:hover {
+    cursor: pointer;
+}
+
+.light {
+    background-color: aliceblue;
+
+}
+
+.dark {
+    background-color: #212121;
+}
+
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    text-align: center;
+}
